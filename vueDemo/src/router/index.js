@@ -1,8 +1,12 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import HelloWorld from '@/components/HelloWorld'
+import main from '@/components/Main'
 import testDemo from '../components/items/testDemo'
-import testDemo2 from '../components/items/testDemo2'
+import antiFakeGuide from '../components/items/AntiFakeGuide'
+import carWash from '../components/CarWash'
+import DatePage from '../components/items/DatePage'
+import Learning from '../components/items/Learning'
+import waitingTask from '../components/items/WaitingTask'
 
 Vue.use(Router)
 
@@ -10,17 +14,37 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'HelloWorld',
-      component: HelloWorld
+      name: 'Main',
+      component: main
     },
     {
       path: '/testDemo',
       component: testDemo
     },
     {
-      path: '/testDemo2/:id',
-      name: 'testDemo2',
-      component: testDemo2
+      path: '/antiFakeGuide/:id',
+      name: 'antiFakeGuide',
+      component: antiFakeGuide
+    },
+    {
+      path: '/carWash/:id',
+      name: 'carWash',
+      component: carWash
+    },
+    {
+      path: '/datePage/:id',
+      name: 'datePage',
+      component: DatePage
+    },
+    {
+      path: '/learning/:id',
+      name: 'learning',
+      component: Learning
+    },
+    {
+      path: '/waitingTask/:id',
+      name: 'waitingTask',
+      component: waitingTask
     }
   ]
 })

@@ -6,8 +6,24 @@
       <button>判断女生是否对你有意思</button>
     </router-link>
     <!--带参数-->
-    <router-link :to="{name:'testDemo2',params:{ id : 123}}">
+    <router-link :to="{name:'antiFakeGuide',params:{ id : 123}}">
       <button>这些年走过的坑</button>
+    </router-link>
+    <!--带参数-->
+    <router-link :to="{name:'carWash',params:{ id : 123}}">
+      <button>洗车系统</button>
+    </router-link>
+    <!--带参数-->
+    <router-link :to="{name:'datePage',params:{ id : 123}}">
+      <button>相亲经历</button>
+    </router-link>
+    <!--带参数-->
+    <router-link :to="{name:'learning',params:{ id : 123}}">
+      <button>学习网站</button>
+    </router-link>
+    <!--带参数-->
+    <router-link :to="{name:'waitingTask',params:{ id : 123}}">
+      <button>待定事项</button>
     </router-link>
     <div id="draggable" class="ui-widget-content">
       <p>请拖动我！</p>
